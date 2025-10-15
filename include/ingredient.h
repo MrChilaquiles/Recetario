@@ -15,7 +15,7 @@ public:
     Ingredient(const Ingredient&);
 
     std::string getName() const;
-    float amount() const;
+    float getAmount() const;
     std::string getUnit() const;
 
     void setName(const std::string&);

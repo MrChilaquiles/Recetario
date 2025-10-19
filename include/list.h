@@ -6,7 +6,7 @@
 #include <iostream>
 using namespace std;
 
-template <class T, int ARRAYSIZE = 1024>
+template <class T, int ARRAYSIZE = 100>
 class List {
 private:
     T data[ARRAYSIZE];
@@ -80,6 +80,7 @@ public:
     void sortDataQuick();
     
     string toString() const;
+    string toString(const bool&) const;
     
     void deleteAll();
     
@@ -388,6 +389,19 @@ string List<T, ARRAYSIZE>::toString() const {
     
     while (i <= this->last) {
         result+= this->data[i].toString() + "\n";
+        i++;
+    }
+    
+    return result;
+}
+
+template<class T, int ARRAYSIZE>
+string List<T, ARRAYSIZE>::toString(const bool& s) const {
+    string result;
+    int i(0);
+    
+    while (i <= this->last) {
+        result+= this->data[i].toString(s) + "\n";
         i++;
     }
     

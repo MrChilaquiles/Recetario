@@ -57,17 +57,39 @@ void Recipe::setInstructions(const string& i) {
 string Recipe::toString() const {
     string result;
 
-    result = this->name;
+    result += this->name;
     result += " | ";
     result += this->category;
     result += " | ";
     result += this->author.toString();
     result += " | ";
-    result += this->ingredients.toString();
+    result += this->preparationTime;
+    result += " | ";
+    result += this->instructions;
+
+    return result;
+}
+
+string Recipe::toString(const bool& s) const {
+    string result;
+
+    result += this->name;
+    result += " | ";
+    result += this->category;
+    result += " | ";
+    result += this->author.toString();
     result += " | ";
     result += this->preparationTime;
     result += " | ";
     result += this->instructions;
+
+    if(s) {
+        result += "\n**********************************************************\n";
+        result += this->ingredients.toString();
+        result += "\n**********************************************************\n";
+    }
+
+    return result;
 }
 
 Recipe& Recipe::operator = (const Recipe& other) {
@@ -146,7 +168,7 @@ istream& operator >> (istream& is, Recipe& s) {
     return is;
 }
 
-ostream& operator << (ostream& os, Recipe& s) {
+ostream& operator << (ostream& os, const Recipe& s) {
     os << s.name << endl;
     os << s.category << endl;
     os << s.author << endl;

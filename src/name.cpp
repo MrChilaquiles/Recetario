@@ -18,6 +18,10 @@ string Name::toString() const {
     return this->last + ", " + this->first;
 }
 
+string Name::toString(const bool& s) const {
+    return this->toString();
+}
+
 void Name::setLast(const string& l) {
     this->last = l;
 }

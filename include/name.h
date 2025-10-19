@@ -18,6 +18,7 @@ public:
     std::string getFirst() const;
 
     std::string toString() const;
+    std::string toString(const bool&) const;
 
     void setLast(const std::string&);
     void setFirst(const std::string&);

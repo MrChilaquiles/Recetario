@@ -36,6 +36,7 @@ public:
     void setInstructions(const std::string&);
     
     std::string toString() const;
+    std::string toString(const bool&) const;
 
     Recipe& operator = (const Recipe&);
 
@@ -55,7 +56,7 @@ public:
     static int compareByPreparationTime(const Recipe&, const Recipe&);
     static int compareByInstructions(const Recipe&, const Recipe&);
 
-    friend std::ostream& operator << (std::ostream&, Recipe&);
+    friend std::ostream& operator << (std::ostream&, const Recipe&);
     friend std::istream& operator >> (std::istream&, Recipe&);
 };
 

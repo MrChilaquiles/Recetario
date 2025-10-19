@@ -1,0 +1,205 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.5 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36" version="28.2.5">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1678" dy="1058" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="Name-1" value="Name" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="40" y="40" width="240" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="Name-2" value="- last: string&#xa;- first: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Name-1" vertex="1">
+          <mxGeometry y="26" width="240" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="Name-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Name-1" vertex="1">
+          <mxGeometry y="70" width="240" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Name-4" value="+ Name()&#xa;+ Name(const Name&amp;)&#xa;+ getLast(): string&#xa;+ getFirst(): string&#xa;+ setLast(const string&amp;): void&#xa;+ setFirst(const string&amp;): void&#xa;+ toString(): string&#xa;+ toString(const bool&amp;): string&#xa;+ compareTo(const Name&amp;): int&#xa;+ compare(const Name&amp;, const Name&amp;): int&#xa;+ operator=, ==, !=, &lt;, &lt;=, &gt;, &gt;=&#xa;+ operator&lt;&lt;, operator&gt;&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Name-1" vertex="1">
+          <mxGeometry y="78" width="240" height="222" as="geometry" />
+        </mxCell>
+        <mxCell id="Ingredient-1" value="Ingredient" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="340" y="40" width="280" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="Ingredient-2" value="- name: string&#xa;- amount: float&#xa;- unit: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Ingredient-1" vertex="1">
+          <mxGeometry y="26" width="280" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="Ingredient-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Ingredient-1" vertex="1">
+          <mxGeometry y="80" width="280" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Ingredient-4" value="+ Ingredient()&#xa;+ Ingredient(const Ingredient&amp;)&#xa;+ getName(): string&#xa;+ getAmount(): float&#xa;+ getUnit(): string&#xa;+ setName(const string&amp;): void&#xa;+ setAmount(const float&amp;): void&#xa;+ setUnit(const string&amp;): void&#xa;+ toString(): string&#xa;+ toString(const bool&amp;): string&#xa;+ compareTo(const Ingredient&amp;): int&#xa;+ compare(...): int&#xa;+ compareByName(...): int&#xa;+ compareByAmount(...): int&#xa;+ compareByUnit(...): int&#xa;+ operator=, ==, !=, &lt;, &lt;=, &gt;, &gt;=&#xa;+ operator&lt;&lt;, operator&gt;&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Ingredient-1" vertex="1">
+          <mxGeometry y="88" width="280" height="252" as="geometry" />
+        </mxCell>
+        <mxCell id="List-1" value="&lt;&lt;template&gt;&gt;&#xa;List&lt;T, ARRAYSIZE=100&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="680" y="40" width="300" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="List-2" value="- data: T[ARRAYSIZE]&#xa;- last: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="List-1" vertex="1">
+          <mxGeometry y="40" width="300" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="List-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="List-1" vertex="1">
+          <mxGeometry y="80" width="300" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="List-4" value="+ List()&#xa;+ List(const List&lt;T, ARRAYSIZE&gt;&amp;)&#xa;+ isEmpty(): bool&#xa;+ isFull(): bool&#xa;+ isSorted(): bool&#xa;+ insertData(const int&amp;, const T&amp;): void&#xa;+ deleteData(const int&amp;): void&#xa;+ getFirstPos(): int&#xa;+ getLastPos(): int&#xa;+ getPrevPos(const int&amp;): int&#xa;+ getNextPos(const int&amp;): int&#xa;+ findDataL(const T&amp;): int&#xa;+ findDataB(const T&amp;): int&#xa;+ retrieve(const int&amp;): T&amp;&#xa;+ sortDataBubble(): void&#xa;+ sortDataMerge(): void&#xa;+ sortDataQuick(): void&#xa;+ insertSortedData(const T&amp;): void&#xa;+ toString(): string&#xa;+ toString(const bool&amp;): string&#xa;+ deleteAll(): void&#xa;+ operator=, &lt;&lt;, &gt;&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="List-1" vertex="1">
+          <mxGeometry y="88" width="300" height="332" as="geometry" />
+        </mxCell>
+        <mxCell id="Recipe-1" value="Recipe" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="340" y="460" width="280" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="Recipe-2" value="- name: string&#xa;- category: string&#xa;- author: Name&#xa;- ingredients: List&lt;Ingredient&gt;&#xa;- preparationTime: string&#xa;- instructions: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Recipe-1" vertex="1">
+          <mxGeometry y="26" width="280" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="Recipe-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Recipe-1" vertex="1">
+          <mxGeometry y="130" width="280" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Recipe-4" value="+ Recipe()&#xa;+ Recipe(const Recipe&amp;)&#xa;+ getName(): string&#xa;+ getCategory(): string&#xa;+ getAuthor(): Name&#xa;+ getIngredients(): List&lt;Ingredient&gt;&amp;&#xa;+ getPreparationTime(): string&#xa;+ getInstructions(): string&#xa;+ setName(const string&amp;): void&#xa;+ setCategory(const string&amp;): void&#xa;+ setAuthor(const Name&amp;): void&#xa;+ setIngredients(...): void&#xa;+ setPreparationTime(...): void&#xa;+ setInstructions(const string&amp;): void&#xa;+ toString(): string&#xa;+ toString(const bool&amp;): string&#xa;+ compareByName(...): int&#xa;+ compareByCategory(...): int&#xa;+ compareByAuthor(...): int&#xa;+ operator=, ==, !=, &lt;, &lt;=, &gt;, &gt;=&#xa;+ operator&lt;&lt;, operator&gt;&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Recipe-1" vertex="1">
+          <mxGeometry y="138" width="280" height="262" as="geometry" />
+        </mxCell>
+        <mxCell id="IngInterface-1" value="IngredientInterface" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="1040" y="40" width="280" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="IngInterface-2" value="- myIngredientsListRef: List&lt;Ingredient&gt;*" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="IngInterface-1" vertex="1">
+          <mxGeometry y="26" width="280" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="IngInterface-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="IngInterface-1" vertex="1">
+          <mxGeometry y="50" width="280" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="IngInterface-4" value="- mainMenu(): void&#xa;- addIngredient(): void&#xa;- deleteIngredient(): void&#xa;- editIngredient(): void&#xa;- showList(): void&#xa;- writeToDisk(): void&#xa;- readFromDisk(): void&#xa;- sortData(): void&#xa;- enterToContinue(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="IngInterface-1" vertex="1">
+          <mxGeometry y="58" width="280" height="152" as="geometry" />
+        </mxCell>
+        <mxCell id="IngInterface-5" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="IngInterface-1" vertex="1">
+          <mxGeometry y="210" width="280" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="IngInterface-6" value="+ IngredientInterface(List&lt;Ingredient&gt;&amp;)&#xa;+ start(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="IngInterface-1" vertex="1">
+          <mxGeometry y="218" width="280" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="RecInterface-1" value="RecipeInterface" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="1040" y="460" width="280" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="RecInterface-2" value="- myRecipesListRef: List&lt;Recipe&gt;*" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="RecInterface-1" vertex="1">
+          <mxGeometry y="26" width="280" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="RecInterface-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="RecInterface-1" vertex="1">
+          <mxGeometry y="50" width="280" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="RecInterface-4" value="- mainMenu(): void&#xa;- addRecipe(): void&#xa;- deleteRecipe(): void&#xa;- searchRecipe(): void&#xa;- showRecipes(): void&#xa;- sortRecipes(): void&#xa;- writeToDisk(): void&#xa;- readFromDisk(): void&#xa;- enterToContinue(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="RecInterface-1" vertex="1">
+          <mxGeometry y="58" width="280" height="152" as="geometry" />
+        </mxCell>
+        <mxCell id="RecInterface-5" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="RecInterface-1" vertex="1">
+          <mxGeometry y="210" width="280" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="RecInterface-6" value="+ RecipeInterface(List&lt;Recipe&gt;&amp;)&#xa;+ start(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="RecInterface-1" vertex="1">
+          <mxGeometry y="218" width="280" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Name-1" target="Recipe-1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="280" y="180" as="sourcePoint" />
+            <mxPoint x="340" y="580" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="300" y="115" />
+              <mxPoint x="300" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge1-label" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="edge1" vertex="1" connectable="0">
+          <mxGeometry x="-0.8" y="2" relative="1" as="geometry">
+            <mxPoint x="-8" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge2" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Ingredient-1" target="Recipe-1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="480" y="390" as="sourcePoint" />
+            <mxPoint x="480" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge2-label" value="0..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="edge2" vertex="1" connectable="0">
+          <mxGeometry x="0.2" y="2" relative="1" as="geometry">
+            <mxPoint x="18" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge3" value="&lt;&lt;bind&gt;&gt;&#xa;&lt;Ingredient&gt;" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Ingredient-1" target="List-1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="620" y="120" as="sourcePoint" />
+            <mxPoint x="680" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge4" value="&lt;&lt;bind&gt;&gt;&#xa;&lt;Recipe&gt;" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Recipe-1" target="List-1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="620" y="660" as="sourcePoint" />
+            <mxPoint x="680" y="380" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="650" y="660" />
+              <mxPoint x="650" y="355" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge5" value="" style="endArrow=open;endFill=0;endSize=12;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="IngInterface-1" target="List-1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1040" y="110" as="sourcePoint" />
+            <mxPoint x="980" y="230" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1010" y="110" />
+              <mxPoint x="1010" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge5-label" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="edge5" vertex="1" connectable="0">
+          <mxGeometry x="0.6" y="1" relative="1" as="geometry">
+            <mxPoint x="8" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge6" value="" style="endArrow=open;endFill=0;endSize=12;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="RecInterface-1" target="List-1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1040" y="530" as="sourcePoint" />
+            <mxPoint x="980" y="380" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1010" y="530" />
+              <mxPoint x="1010" y="355" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge6-label" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="edge6" vertex="1" connectable="0">
+          <mxGeometry x="0.7" y="2" relative="1" as="geometry">
+            <mxPoint x="8" y="8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge7" value="&lt;&lt;uses&gt;&gt;" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="RecInterface-1" target="IngInterface-1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1180" y="460" as="sourcePoint" />
+            <mxPoint x="1180" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="title1" value="&lt;b style=&quot;font-size: 24px;&quot;&gt;Diagrama UML - Sistema de Recetario&lt;/b&gt;&#xa;&#xa;Clases principales:&#xa;- Name: Representa nombres de autores&#xa;- Ingredient: Representa ingredientes con nombre, cantidad y unidad&#xa;- Recipe: Receta completa con autor, ingredientes, tiempo e instrucciones&#xa;- List&lt;T&gt;: Plantilla de lista genérica con ordenamiento y búsqueda&#xa;- IngredientInterface: Interfaz para gestionar ingredientes&#xa;- RecipeInterface: Interfaz principal para gestionar recetas" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=12;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="40" y="920" width="600" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="legend1" value="&lt;b&gt;LEYENDA&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="720" y="920" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="legend2" value="Composición (tiene un)" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="720" y="960" as="sourcePoint" />
+            <mxPoint x="820" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend3" value="Asociación (usa)" style="endArrow=open;endFill=0;endSize=12;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="720" y="990" as="sourcePoint" />
+            <mxPoint x="820" y="990" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend4" value="Dependencia" style="endArrow=open;endSize=12;dashed=1;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="720" y="1020" as="sourcePoint" />
+            <mxPoint x="820" y="1020" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend5" value="Plantilla (bind)" style="endArrow=open;endSize=12;dashed=1;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="720" y="1050" as="sourcePoint" />
+            <mxPoint x="820" y="1050" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="note1" value="&lt;b&gt;Relaciones Principales:&lt;/b&gt;&#xa;&#xa;1. Recipe contiene (composición):&#xa;   - Un objeto Name (author)&#xa;   - Un List&lt;Ingredient&gt; (ingredients)&#xa;&#xa;2. IngredientInterface gestiona:&#xa;   - Un List&lt;Ingredient&gt;* (referencia)&#xa;&#xa;3. RecipeInterface gestiona:&#xa;   - Un List&lt;Recipe&gt;* (referencia)&#xa;   - Usa IngredientInterface para&#xa;     gestionar ingredientes de recetas&#xa;&#xa;4. List&lt;T&gt; es una plantilla genérica&#xa;   instanciada con Ingredient y Recipe" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="900" y="920" width="420" height="220" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

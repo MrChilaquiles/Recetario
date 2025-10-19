@@ -24,7 +24,7 @@ public:
     std::string getName() const;
     std::string getCategory() const;
     Name getAuthor() const;
-    List<Ingredient>& getIngredients() const;
+    List<Ingredient>& getIngredients();
     std::string getPreparationTime() const;
     std::string getInstructions() const;
 

@@ -2,14 +2,11 @@
 
 using namespace std;
 
-Ingredient::Ingredient()
-{
-    
-}
+Ingredient::Ingredient() { }
 
 Ingredient::Ingredient(const Ingredient& other) : name(other.name), amount(other.amount), unit(other.unit) { }
 
-std::string Ingredient::getName() const {
+string Ingredient::getName() const {
     return this->name;
 }
 
@@ -17,11 +14,11 @@ float Ingredient::getAmount() const {
     return this->amount;
 }
 
-std::string Ingredient::getUnit() const {
+string Ingredient::getUnit() const {
     return this->unit;
 }
 
-void Ingredient::setName(const std::string& n) {
+void Ingredient::setName(const string& n) {
     this->name = n;
 }
 
@@ -29,11 +26,11 @@ void Ingredient::setAmount(const float& a) {
     this->amount = a;
 }
 
-void Ingredient::setUnit(const std::string& u) {
+void Ingredient::setUnit(const string& u) {
     this->unit = u;
 }
 
-std::string Ingredient::toString() const {
+string Ingredient::toString() const {
     string result;
 
     result = to_string(this->amount);
@@ -95,7 +92,7 @@ int Ingredient::compareByUnit(const Ingredient& a, const Ingredient& b) {
     return a.unit.compare(b.unit);
 }
 
-std::istream& operator >> (std::istream& is, Ingredient& i) {
+istream& operator >> (istream& is, Ingredient& i) {
     string myStr;
 
     is >> i.name;
@@ -105,7 +102,7 @@ std::istream& operator >> (std::istream& is, Ingredient& i) {
     return is;
 }
 
-std::ostream& operator << (std::ostream& os, Ingredient& i) {
+ostream& operator << (ostream& os, Ingredient& i) {
     os << i.name << endl;
     os << i.amount << endl;
     os << i.unit << endl;

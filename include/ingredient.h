@@ -23,6 +23,7 @@ public:
     void setUnit(const std::string&);
 
     std::string toString() const;
+    std::string toString(const bool&) const;
 
     Ingredient& operator = (const Ingredient&);
 
@@ -40,7 +41,7 @@ public:
     static int compareByAmount(const Ingredient&, const Ingredient&);
     static int compareByUnit(const Ingredient&, const Ingredient&);
 
-    friend std::ostream& operator << (std::ostream&, Ingredient&);
+    friend std::ostream& operator << (std::ostream&, const Ingredient&);
     friend std::istream& operator >> (std::istream&, Ingredient&);
 };
 

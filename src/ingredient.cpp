@@ -38,6 +38,12 @@ string Ingredient::toString() const {
     result += this->unit;
     result += " | ";
     result += this->name;
+
+    return result;
+}
+
+string Ingredient::toString(const bool& s) const {
+    return this->toString();
 }
 
 Ingredient& Ingredient::operator = (const Ingredient& other) {
@@ -102,7 +108,7 @@ istream& operator >> (istream& is, Ingredient& i) {
     return is;
 }
 
-ostream& operator << (ostream& os, Ingredient& i) {
+ostream& operator << (ostream& os, const Ingredient& i) {
     os << i.name << endl;
     os << i.amount << endl;
     os << i.unit << endl;

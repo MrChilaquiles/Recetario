@@ -14,12 +14,9 @@ void IngredientInterface::mainMenu() {
         cout << "[E]liminar ingrediente" << endl;
         cout << "[C]ambiar ingrediente" << endl;
         cout << "[M]ostrar ingredientes" << endl;
-        cout << "[G]uardar al disco" << endl;
-        cout << "[L]eer del disco" << endl;
-        cout << "[O]rdenar" << endl;
         cout << "[S]alir" << endl << endl;
 
-        cout << "Elija una opcion (A,E,C,M,G,L,O,S): ";
+        cout << "Elija una opcion (A,E,C,M,S): ";
         cin >> op;
         cin.ignore();
 
@@ -40,18 +37,6 @@ void IngredientInterface::mainMenu() {
         
         case 'M':
             this->showList();
-            break;
-        
-        case 'G':
-            this->writeToDisk();
-            break;
-
-        case 'L':
-            this->readFromDisk();
-            break;
-
-        case 'O':
-            this->sortData();
             break;
         
         case 'S':

@@ -1,6 +1,14 @@
 #include <iostream>
+#include "recipeinterface.h"
 
-int main(int argc, char *argv[])
-{
-    std::cout << "Hello world!" << std::endl;
+using namespace std;
+
+int main() {
+    List<Recipe> myRecipeList;
+    
+    RecipeInterface myInterface(myRecipeList);
+    
+    myInterface.start();
+    
+    return 0;
 }
